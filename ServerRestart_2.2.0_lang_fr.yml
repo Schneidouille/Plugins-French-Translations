@@ -1,0 +1,14 @@
+# Traduit par Schneidouille
+command._def.no-permission: "§8[§fServerRestart§8] §7Aucune permission."
+command.srt.help: |-
+  §8[§fServerRestart§8] §7/srt ...
+      §fcheck §7- Afficher la prochaine heure programmée
+      §freload §7- Recharge la configuration du plugin
+      §fskip §7- sauter l'heure programmée suivante
+      §ffrestart [seconds] §7- forcer le redémarrage du serveur
+command.srt.check.info: "§8[§fServerRestart§8] §7Prochain redémarrage: §f{time}"
+command.srt.reload.info: "§8[§fServerRestart§8] §7Configuration rechargé!"
+command.srt.skip.info: "§8[§fServerRestart§8] §7Sauté, suivant: §f{time}"
+command.srt.frestart.invalid-seconds: "§8[§fServerRestart§8] §7Argument §f`secondes`§\
+  7 doit être un nombre >= 0"
+command.srt.frestart.info: "§8[§fServerRestart§8] §7Redémarrage forcé: §f{time}"
