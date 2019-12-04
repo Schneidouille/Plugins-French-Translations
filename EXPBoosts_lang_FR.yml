@@ -1,0 +1,58 @@
+#Traduit par Schneidouille
+lang:
+  prefix: '&f[&aXPBoost&f] '
+  doublexpnot: '&fVous avez &a%newexp% XP &f au lieu de &a%oldexp% XP'
+  actionbar: '&aBoost XP de %boost%x activé'
+  bossbar: '&aBoost XP de %boost%x activé'
+  motd: "&c%boost%x &aXP Multiplier is enabled! Join NOW! \n &f&lThis is second line!\
+    \ &c%players%/%max%"
+  boostfisnish: '&cVotre boost a expiré.'
+  boostcountdown: '&fSecondes restantes: &6'
+  boostinfodeny: '&fVous n''avez pas de boost actif.'
+  xpbuy: '&c%boost%x &fXP boost &fest activé pendant &a%time% secondes &c(%money%$).'
+  gui: '&cXPBoost Shop'
+  xptitle: '&a%boost%x XP Boost.'
+  boostlore:
+  - '&c%boost%x XP Boost pour %time% secondes'
+  - '&aPrix: &f&l%money%$'
+  buyfail: '&cVous n''avez pas assez d''argent pour acheter ce boost ! &a(%money%$)'
+  boostactive: '&cVotre boost est toujours actif !'
+  joinnotmsg: '&f&lGlobal XP Boost de  %boost%x est actuellement &f&adisponible &f&lpour
+    tous!'
+  cmdblock: '&cVous n''êtes pas autorisé à exécuter &a%cmd% &ccommand lorsque boost
+    est actif :('
+  itemname: '&a%boost%x XPBoost'
+  factions_gui_name: '&cFaction XPBoost Shop'
+  factions_nofaction: '&cVous n''êtes membre d''aucune faction.'
+  factions_active_boost: Votre faction a déjà un boost actif !
+  factions_only_owners: Ce boost ne peut être acheté que par le propriétaire de la
+    faction !
+  factions_expire: '&cLe boost de votre faction a expiré !'
+  factions_buy: '&c%player% &fa acheté un boost de &c%boost%x &fpour toute la faction
+    pendant &c%time% secondes!'
+  factions_one_boost: Vous ne pouvez pas acheter de boosts tant que le boost de faction
+    est actif.
+  item:
+    lore1: '&fBoost: &a%boost%x'
+    lore2: '&fTemps: &a%time% Secondes'
+    lore3: '&8Clique-Droit pour obtenir un boost.'
+  reload: '&fLa config a été rechargé'
+  info_command:
+    boost: 'Boost: &6%boost%'
+    boost_type: 'Boost type:'
+  command_not_found: '&cCette commande n''existe pas.'
+  pluginmenu:
+  - /xpboost gui &f- Ouvre l'interface graphique
+  - /xpboost info &f- Affiche le temps restant
+  - /xpboost factions &f- Ouvre une interface graphique de factions
+  - /xpboost on/off &f - Active/désactive le XP Boost global.
+  - /xpboost give <name/all> <boost> <time> [VANILLA,SKILLAPI,MCMMO,RPGME,HEROES]&f
+    - Donne un boosts aux joueurs
+  - /xpboost clear <name> &f - Efface le boost actif
+  - /xpboost item <player> <boost> <time>&f - Donne un objet XPboost à un joueur
+  - /xpboost giveDefinedBoost <player/all> <boostId> [durationInSeconds]&f - Donne
+    un boost prédéfini
+  - /xpboost global <boost> [time in seconds]- Modifie le multiplicateur de boost
+    global
+  - /xpboost reload &f - Recharger la configuration
+  - de tout ce qui se trouve à l'intérieur [] is &coptional
