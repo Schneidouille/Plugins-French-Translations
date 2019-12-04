@@ -1,0 +1,78 @@
+version: 2
+#Traduit par Schneidouille
+weathers:
+    beautiful: "&aLe soleil brille, l'herbe est verte et le temps est &aBeau."
+    breezy: "&7Une brise fraîche touche votre peau, ça va être &7Venteux"
+    chilly: "&3Vous frissonnez quand le gel scintille autour de vous, c'est très &bFrisquet"
+    rainy: "&3Une forte pluie tombe et mouille le sol, c'est Pluvieux"
+    scorching: "&eLe soleil brûle votre peau et le sol fait mal au toucher, c'est &6Brûlant"
+    hot: "&eIl va faire très &6Chaud &eaujourd'hui."
+    warm: "&eUne chaleur apaisante vous serre dans ses bras lorsque vous bougez, c'est une &6chaude &ejournée."
+    cold: "&3L'eau est très &9Froide &3aujourd'hui."
+    stormy: "&cUne grande &4Tempête &cse prépare, les Dieux sont en colère.... Préparez-vous !"
+    freezing: "&3L'eau gèle avec une couche de glace et vous sentez un grand froid, il &9Gèle."
+    snowy: "&7Une grande couverture blanche recouvre le monde, il &fNeige."
+    night: "&7Le monde repose avec le soleil et tout est calme.... Jusqu'à ce que les foules viennent vous manger !"
+
+seasons:
+    spring: "Le soleil se lève, les fleurs sentent bon et il y a un printemps dans votre démarche... littéralement !"
+    summer: "Aujourd'hui, il fait plus chaud que les autres, peut-être même trop chaud.... L'été est arrivé !"
+    autumn: "Une brise fraîche murmure aux feuilles qui tombent des arbres \"C'est l'automne !\""
+    winter: "Quelques flocons de neige tombent et le monde devient froid, il est temps pour l'hiver de faire sa marque...."
+
+effects:
+    on-trigger:
+        devastation: "&cVotre cœur bat rapidement, vos jambes tremblent et vous vous rendez compte que vous ne pouvez pas régénérer votre santé avant que cette dévastation ne passe !"
+        feels-good: "&aLa brise est si agréable sur la peau que l'armure ne ferait que ruiner l'effet...."
+        fluffy-coat: "&aVotre armure vous procure une chaleur apaisante qui vous rend résistant au froid !"
+        frostbite: "&cLe monde est gelé et vous aussi si vous ne portez pas d'armure !"
+        hold-onto-your-hat: "&7Attention à votre chapeau, le vent se lève...."
+        hot-sand: "&eMarcher sur le sable par cette chaleur doit être douloureux !"
+        icy: "&9Un frisson coule le long de votre colonne vertébrale quand l'eau se transforme en glace !"
+        primitive-heating: "&9Une source de chaleur serait formidable à transporter dans ce froid !"
+        revitalized: "&aCe temps est tellement revitalisant !"
+        soldering-iron: "&eLe fer à repasser voisin commence à grésiller, mieux vaut le poser pour l'instant...."
+        strong-current: "&9L'eau coule avec un fort courant, elle sera difficile à traverser !"
+        sweating: "&eCe n'est certainement PAS le temps pour une armure complète...."
+        the-shivers: "&cL'eau est près de la glace et dangereusement froide au toucher...."
+        wet-mud: "&7La saleté recouvre vos bottes et devient difficile à traverser par ce temps...."
+        warming-stew: "&7Votre estomac commence à gargouiller et vous commencez à avoir envie d'une bonne soupe...."
+        wind-in-your-boots: "&7Vous sentez le vent en votre faveur aujourd'hui !"
+    on-give:
+        feels-good: "&aLe soleil sur votre peau sans armure vous donne de l'énergie, du bien être !"
+        fluffy-coat: "&aVotre armure vous donne une chaleur apaisante et vous rend plus résistant au monde."
+        hold-onto-your-hat: "&eTon chapeau s'est envolé, oh mon Dieu !"
+        primitive-heating: "&aUn objet chaud dans votre inventaire vous réchauffe le cœur et vous rend résistant au froid."
+        revitalized: "&aLe soleil de ce monde est si revitalisant, il vous régénère !"
+        icy: "&cL'eau gèle dans votre seau...."
+        soldering-iron: "&cLe fer à repasser est trop chaud, ne le tenez pas trop longtemps !"
+        strong-current: "&cLe courant s'écrase contre vous et vos muscles pleurent de douleur...."
+        sweating: "&cLa sueur coule de votre front, il fait trop chaud pour une armure aujourd'hui...."
+        the-shivers: "&cL'eau glacée vous tue, sortez de là si vous voulez vivre !"
+        warming-stew: "&aEt voilà, le délicieux plat rend vos blessures un peu plus supportables...."
+        wet-mud: "&eLa boue colle à vos bottes, vous ralentissant...."
+        wind-in-your-boots: "&aVous sentez une poussée de vent dans vos bottes et foncez vers l'avant !"
+    on-remove:
+        feels-good: "&eLorsque vous laissez le monde derrière vous, la lumière du soleil s'estompe...."
+        fluffy-coat: "&cSans armure, votre corps ressent à nouveau le froid et n'y résiste plus."
+        primitive-heating: "&eVotre corps n'est plus réchauffé et sa Résistance s'use...."
+        revitalized: "&eLorsque la lumière du monde quitte votre peau, c'est aussi l'énergie revitalisante...."
+        strong-current: "&aLes eaux diminuent et s'apaisent...."
+        sweating: "&aL'air devient plus frais et vous essuyez la sueur de votre front...."
+
+command:
+    effects-list-title: "&7Pour la météo &e%weather%, &7les effets sont:"
+    effects-list-element: "&6&l%effect%: &7%description%"
+    season-info:
+        - "%season-color%Votre monde est en %season%"
+        - "&7La météo est actuellement &2%weather%"
+        - "&eAujourd'hui c'est le jour %day% sur %max-days%"
+    season-info-footer: "&7Pour voir les effets de ce temps, utilisez la commande &e/seasons effects"
+    list-help:
+        - "&7Vous pouvez actuellement lister: %options%"
+        - "&7Utilisation: &e/seasons list <option>"
+    list-error: "&cIl n'y a pas de liste de ce type disponible !"
+
+misc:
+    prefix: "&e&lSeasons&7∙ &r"
+    catastrophic-alert: "&c&lALERTE MÉTÉOROLOGIQUE CATASTROPHIQUE - Prenez soin de planifier votre journée"
