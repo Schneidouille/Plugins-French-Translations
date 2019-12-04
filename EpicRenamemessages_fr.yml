@@ -1,0 +1,179 @@
+# Traduit par Schneidouille
+messages_yml_version: 11
+epicrename:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  no_args: '&cTapez /epicrename help pour voir les commandes. (Pas d''Arguments)'
+  license: '&6Voir les informations de licence sur: http://bit.ly/2eMknxx'
+  help:
+  - '&6/rename <name>'
+  - '&6/lore <lore>'
+  - '&6/setloreline <linenum> <text>'
+  - '&6/removeloreline <linenum>'
+  - '&6/glow'
+  - '&6/removeglow'
+  - '&6/export <hand,inventory>'
+  - '&6/import <hand,inventory> <webLink>'
+  - '&6/import raw <rawYAML>'
+  - '&6Voir plus d''aide sur les commandes sur https://www.spigotmc.org/resources/epicrename.4341/'
+  - '&6/epicrename <help, license, reload, debug, version>'
+  reload_success: '&aPlugin rechargé avec suucès !'
+  debug_enable: '&6Les messages de débogage des plugins sont maintenant &a&lACTIVÉ&6.'
+  debug_disable: '&6Les messages de débogage des plugins sont maintenant &4&lDÉSACTIVÉ&6.'
+  invalid_args: '&cArguments non valides. Veuillez mettre help, license, reload, debug, ou
+    version après /epicrename.'
+  version: '&6Vous exécutez &bEpic&fRename &6version {version}.'
+rename:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  no_args: '&cVous devez placer au moins un argument après /rename.'
+  blacklisted_word_found: '&cDésolé ce nom contient un mot sur la liste noire.'
+  blacklisted_material_found: '&cDésolé ce matériel est sur la liste noire.'
+  blacklisted_existing_name_found: '&cDésolé cet objet a un nom existant qui est
+sur la liste noire.'
+  blacklisted_existing_lore_found: '&cDésolé cet objet a une ligne de description
+qui est sur la liste noire.'
+  cannot_rename_air: '&cDésolé, vous ne pouvez rien renommer..'
+  no_permission_for_material: '&cDésolé vous n''avez pas la permission pour ce matériel.'
+  success: '&aObjet renommé avec succès.'
+  log: '&aLe joueur &f{player} &avient de renommer un objet en: &f"{name}&f"&a.'
+  disabled_world: '&cVous êtes dans un monde désactivé.'
+lore:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  no_args: '&cVous devez placer au moins un argument après /lore.'
+  blacklisted_word_found: '&cDésolé ce nom contient un mot sur la liste noire.'
+  blacklisted_material_found: '&cDésolé ce matériel est sur la liste noire.'
+  blacklisted_existing_name_found: '&cDésolé cet objet a un nom existant qui est
+sur la liste noire.'
+  blacklisted_existing_lore_found: '&cDésolé cet objet a une ligne de description
+qui est sur la liste noire.'
+  cannot_lore_air: '&cDésolé vous ne pouvez pas faire de description.'
+  no_permission_for_material: '&cDésolé vous n''avez pas la permission pour ce matériel.'
+  success: '&aDescription faite avec succès.'
+  disabled_world: '&cVous êtes dans un monde désactivé.'
+setloreline:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  wrong_args: '&cVous devez placer au moins un argument après /setloreline. /setloreline
+    <linenumber> <text>'
+  not_an_int: '&cVous devez fournir un entier comme premier argument.'
+  invalid_number: '&cDésolé, ce numéro n''est pas valide.'
+  provide_text: '&cVeuillez fournir du texte. /setloreline <linenumber> <text>'
+  blacklisted_word_found: '&cDésolé ce nom contient un mot sur la liste noire.'
+  blacklisted_material_found: '&cDésolé ce matériel est sur la liste noire.'
+  blacklisted_existing_name_found: '&cDésolé cet objet a un nom existant qui est
+sur la liste noire.'
+  blacklisted_existing_lore_found: '&cDésolé cet objet a une ligne de description
+qui est sur la liste noire.'
+  cannot_edit_air: '&cDésolé vous ne pouvez pas faire de description.'
+  no_permission_for_material: '&cDésolé vous n''avez pas la permission pour ce matériel.'
+  success: '&aObjet rechargé avec succès'
+  disabled_world: '&cVous êtes dans un monde désactivé.'
+removeloreline:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  wrong_args: '&cVous devez placer au moins un argument après /removeloreline. /removeloreline
+    <linenumber>'
+  not_an_int: '&cVous devez fournir un entier comme premier argument.'
+  invalid_number: '&cDésolé, ce numéro n''est pas valide.'
+  has_no_lore: '&cCet objet n''a pas de description'
+  out_of_bounds: '&cCe numéro n''existe pas dans cette description.'
+  blacklisted_material_found: '&cDésolé ce matériel est sur la liste noire.'
+  blacklisted_existing_name_found: '&cDésolé cet objet a un nom existant qui est
+sur la liste noire.'
+  blacklisted_existing_lore_found: '&cDésolé cet objet a une ligne de description
+qui est sur la liste noire.'
+  cannot_edit_air: '&cDésolé, vous ne pouvez rien éditer.'
+  no_permission_for_material: '&cDésolé vous n''avez pas la permission pour ce matériel.'
+  success: '&aDescription supprimé avec succès.'
+  disabled_world: '&cVous êtes dans un monde désactivé.'
+glow:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  cannot_edit_air: '&cDésolé, vous ne pouvez rien éditer.'
+  no_permission_for_material: '&cDésolé vous n''avez pas la permission pour ce matériel.'
+  success: '&aLueur ajoutée à l''objet avec succès.'
+  has_enchants: '&cDésolé cet objet a des enchantements ou il brille déjà.'
+  disabled_world: '&cVous êtes dans un monde désactivé.'
+  blacklisted_material_found: '&cDésolé ce matériel est sur la liste noire.'
+  blacklisted_existing_name_found: '&cDésolé cet objet a un nom existant qui est
+sur la liste noire.'
+  blacklisted_existing_lore_found: '&cDésolé cet objet a une ligne de description
+qui est sur la liste noire.'
+removeglow:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  cannot_edit_air: '&cDésolé, vous ne pouvez rien éditer.'
+  no_permission_for_material: '&cSorry you don''t have permission for that material.'
+  success: '&aLueur supprimé de l''objet avec succès'
+  not_glowing: '&cCet objet ne brille pas et n''a pas d''autres enchantements.'
+  disabled_world: '&cVous êtes dans un monde désactivé.'
+  blacklisted_material_found: '&cDésolé ce matériel est sur la liste noire.'
+  blacklisted_existing_name_found: '&cDésolé cet objet a un nom existant qui est
+sur la liste noire.'
+  blacklisted_existing_lore_found: '&cDésolé cet objet a une ligne de description
+qui est sur la liste noire.'
+import:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  no_args: '&cVeuillez fournir au moins un argument après /import. /import <hand, inventory,
+    raw>'
+  wrong_args: '&cVeuillez suivre l''usage correct de l''argument. /import <hand, inventory,
+    raw>'
+  success: '&aImporté avec succès.'
+  failed_to_get_data: '&cÉchec de l''importation à partir de "{link}". Error: {error}'
+  confirmed: '&aVous confirmez que vous comprenez que vos articles seront supprimés par /import
+    inventory. Vous pouvez maintenant utiliser /import l''inventaire normalement jusqu''au prochain redémarrage du serveur.'
+  not_confirmed: '&c/import upprime tous les articles de votre inventaire. S''il vous plaît
+    tapez /import confirmer pour confirmer que vous comprenez.'
+  full_hand: '&cVotre main principale doit être vide pour importer un article. Réessayez après avoir effacé
+    votre main principale.'
+  yaml_fail: '&cImpossible d''importer un article à partir du yaml fourni. Assure-toi que le yaml
+    est formaté correctement.'
+  wrong_args_hand: '&cVos arguments fournis à /import hand <link> ne sont pas corrects.
+    /Importer hand <link> '
+  wrong_args_inventory: '&cVos arguments fournis pour /import inventory <link> sont
+    n''est pas correct. /Import inventory <link>'
+export:
+  no_permission: '&cDésolé vous n''avez pas la permission d''exécuter cette commande.'
+  wrong_sender: '&cDésolé, seul un joueur peut utiliser cette commande.'
+  no_args: '&cVeuillez fournir au moins un argument après /export. /export <hand, inventory>'
+  wrong_args: '&cVeuillez suivre l''usage correct de l''argument. /export <hand, inventory>'
+  warn_public: '&6/export envoie vos articles à un lien public EpicRename.com. En utilisant
+    /export vous acceptez la politique de confidentialité d''EpicRename.com qui peut être trouvée
+    à l''adresse https://epicrename.com/privacy Tapez " /export confirm " pour confirmer que vous êtes d''accord.
+    avec cette action. Vous ne serez invité à nouveau qu''après le prochain redémarrage du serveur.'
+  success: '&aProduit(s) exporté(s) avec succès. Utilisez le lien suivant pour /import le fichier
+    objet(s). Le lien expire dans un mois. {link}'
+  post_fail: '&cN''a pas réussi à poster sur EpicRenameOnline : {error}'
+  confirmed: '&aVous avez confirmé que vous êtes d''accord pour afficher vos articles publiquement. Vous pouvez
+    utilisez maintenant /export normalement jusqu''au prochain redémarrage du serveur.'
+  no_air: '&cVous ne pouvez rien exporter.'
+rename_character_limit:
+  name_too_long: '&cDésolé ce nom est trop long. La limite de caractères est {char}.'
+  bypass_msg: '&aVous avez dépassé la limite de caractères de {char}.'
+format_code_permission:
+  no_permission: '&cVous n''avez pas l''autorisation pour le code de format "{code}".'
+format_code_limit:
+  min_not_reached: '&cVous n''avez pas atteint le nombre minimum de codes de formatage. S''il vous plaît
+    utiliser plus de codes de formatage {min}.'
+  max_reached: '&cVous avez atteint le nombre maximum de codes de formatage. Veuillez utiliser moins
+    que {max} codes de formatage.'
+  bypass_min: '&aVous avez outrepassé la limite minimale du code de formatage.'
+  bypass_max: '&aVous avez outrepassé la limite maximale du code de formatage.'
+blacklists:
+  material:
+    bypass: '&aVous avez contourné la liste noire matérielle.'
+  text:
+    bypass: '&aVous venez de contourner la liste noire text.'
+  existingname:
+    bypass: '&aVous venez de contourner la liste noire des noms existants.'
+  existinglore:
+    bypass: '&aVous venez de contourner la liste noire des descriptions.'
+economy:
+  bypass: '&aVous avez juste contourné l''exigence de l''économie.'
+  transaction_success: '&a{cost} A été pris dans votre balance.'
+  transaction_error: '&cIl y a eu un problème pour prendre de l''argent sur votre solde : {error}'
+exploit_prevention:
+  no_grindstone_with_glowing_items: '&cVous ne pouvez pas utiliser une meule sur un objet luisant.
+    Veuillez d''abord retirer la lueur de l''objet avec /removeglow.'
