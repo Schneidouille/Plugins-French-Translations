@@ -1,0 +1,56 @@
+# French(fr)
+# For BannerMaker v2.1.0
+# Contributor(s): KID
+# Traduit par Schneidouille
+general:
+  prefix: '&6[&aBannerMaker&6]&r '
+  reload: Rechargement de la configuration
+  no-permission: Pas de permission
+  no-money: Pas assez d'argent
+  money-transaction: Utilisez {0} pour obtenir la bannière. Maintenant vous avez {1}
+io:
+  save-failed: Sauvegarde échouée.
+  save-success: Savegarde réussie.
+  remove-banner: Supprimer la bannière &r#{0}
+command:
+  player-only: Cette commande ne peut être utilisée que par les joueurs en jeu.
+  invalid-parameter: 'Paramètre(s) invalide(s), utilisation correcte: {0}'
+  not-banner-hand: L'objet en main n'est pas une bannière.
+  not-banner-see: Le bloc que vous regardez n'est pas une bannière.
+config:
+  add-setting: Ajouter {0} nouveaux paramètres
+gui:
+  prefix: '&4[BM]&r '
+  main-menu: Menu principal
+  prev-page: Page Précédente
+  next-page: Page Suivante
+  create-banner: Créer une bannière
+  uncraftable-warning: Avertissement Infabriquable
+  uncraftable: Infabriquable
+  more-than-6-patterns: Plus de 6 motifs.
+  more-patterns: Plus de motifs
+  back: Retour
+  create: Créer
+  delete: SUPPRIMER
+  remove-last-pattern: Supprimer dernier motif
+  banner-info: Info Bannière
+  pattern-s: motif(s)
+  no-patterns: Pas de motifs
+  craft-recipe: Fabriquer Recette
+  get-this-banner: Obtenir cette bannière
+  get-banner: Obtenir bannière &r#{0}
+  get-banner-for-free: Obtenez la bannière gratuitement
+  buy-banner-in-price: Acheter pour {0}
+  get-banner-by-craft: Frabriquer
+  price: 'Prix: {0}'
+  clone-and-edit: 'Cloner & Éditer'
+  alphabet-and-number: 'Alphabet & Nombre'
+  toggle-border: Inverser la bordure
+  materials:
+    enough: Matériaux suffisants
+    not-enough: Matériaux insuffisants
+  click:
+    left: Clique Gauche
+    right: Clique Droit
+  selected-pattern-color: Couleur du motif sélectionné
+  toggle-preview-mode: Changer le mode de prévisualisation
